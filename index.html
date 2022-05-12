@@ -11,10 +11,50 @@
 <body>
     <header>
     </header>
-    <main class="calculator__container">
+    <main class="main">
         <section class="calculator">
-
+            <div class="calculator-container">
+                <section class="calculator-screen">
+                    <div class="screen-previous" id="previousScreen"> 
+                    </div>
+                    <div class="screen-now" id="nowScreen"> 
+                    </div>
+                </section>
+                <section class="calculator-digit">
+                    <div class="calculator-grid">           
+                        <button class="btn btn-red span-2" id="clearBtn" onclick="this.blur()">CLEAR</button>
+                        <button class="btn btn-blue span-2" id="deleteBtn" onclick="this.blur()">DELETE</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >7</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >8</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >9</button>
+                        <button class="btn" onclick="this.blur()" calculator-operator>+</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >4</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >5</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >6</button>
+                        <button class="btn" onclick="this.blur()" calculator-operator>-</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >1</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >2</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >3</button>
+                        <button class="btn" onclick="this.blur()" calculator-operator>x</button>
+                        <button class="btn" onclick="this.blur()" id="pointBtn">.</button>
+                        <button class="btn" onclick="this.blur()" calculator-number >0</button>
+                        <button class="btn" onclick="this.blur()" id="equalBtn">=</button>
+                        <button class="btn" onclick="this.blur()" calculator-operator>÷</button>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>2022
+          Jack
+        </p>
+        <a href="https://github.com/michalosman" target="_blank">
+          <i class="fab fa-github" aria-hidden="true"></i></a>
+      </footer>
 </body>
 </html>
